@@ -19,6 +19,7 @@ word = sys.argv[1]
 src = '/usr/share/dict/words'
 f = open(src, 'r')
 _dict = f.read().split("\n")
+f.close()
 res = "valid" if word in _dict else "invalid"
 
 msg = "The word '" + word + "' is " + res
